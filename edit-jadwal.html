@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Jadwal</title>
+  <link rel="stylesheet" href="style-dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Sekolah" />
+      <div>
+        <h1>SMK HANG TUAH 1 JAKARTA</h1>
+        <h2>SMK PUSAT KEUNGGULAN</h2>
+      </div>
+    </div>
+    <a href="home.html" class="logout">Logout</a>
+  </header>
+
+  <div class="main">
+    <nav class="sidebar">
+      <div class="user-role">
+        <i class="fa fa-user-circle"></i>
+        <span>Admin</span>
+      </div>
+      <ul>
+        <li><a href="dashboard-admin.html"><i class="fa fa-home"></i> Beranda</a></li>
+        <li><a href="notifikasi-admin.html"><i class="fa fa-bell"></i> Pengumuman</a></li>
+        <li><a href="edit-profile.html"><i class="fa fa-pen"></i> Edit Profile</a></li>
+        <li class="active"><a href="edit-jadwal.html"><i class="fa fa-calendar"></i> Edit Jadwal</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1>Edit Jadwal Pelajaran</h1>
+
+      <div class="card">
+        <form class="form-nilai">
+          <label for="peran">Pilih Peran:</label>
+          <select id="peran" name="peran">
+            <option value="siswa">Siswa</option>
+            <option value="guru">Guru</option>
+          </select>
+
+          <label for="hari">Hari:</label>
+          <select id="hari" name="hari">
+            <option>Senin</option>
+            <option>Selasa</option>
+            <option>Rabu</option>
+            <option>Kamis</option>
+            <option>Jumat</option>
+            <option>Sabtu</option>
+          </select>
+
+          <label for="mapel">Mata Pelajaran:</label>
+          <input type="text" id="mapel" name="mapel" placeholder="Contoh: Bahasa Indonesia">
+
+          <label for="jam">Jam:</label>
+          <input type="text" id="jam" name="jam" placeholder="Contoh: 07.00 - 08.30">
+
+          <label for="kelas">Kelas (khusus siswa):</label>
+          <input type="text" id="kelas" name="kelas" placeholder="Contoh: XI RPL 1">
+
+          <button type="submit">Simpan Jadwal</button>
+        </form>
+      </div>
+
+      <hr style="margin: 30px 0;">
+
+      <div class="card">
+        <h3>Contoh Jadwal Yang Sudah Ada:</h3>
+        <ul>
+          <li><strong>Senin:</strong> Matematika (07.00 - 08.30) - Kelas XI RPL 1</li>
+          <li><strong>Selasa:</strong> Bahasa Inggris (08.30 - 10.00) - Kelas X TKJ 2</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

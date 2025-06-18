@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ringkasan Nilai Siswa</title>
+  <link rel="stylesheet" href="style-dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Sekolah" />
+      <div>
+        <h1>SMK HANG TUAH 1 JAKARTA</h1>
+        <h2>SMK PUSAT KEUNGGULAN</h2>
+      </div>
+    </div>
+    <a href="home.html" class="logout">Logout</a>
+  </header>
+
+  <div class="main">
+    <nav class="sidebar">
+      <div class="user-role">
+        <i class="fa fa-user-circle"></i>
+        <span>Siswa</span>
+      </div>
+      <ul>
+        <li><a href="dashboard-siswa.html"><i class="fa fa-home"></i> Beranda</a></li>
+        <li><a href="notifikasi.html"><i class="fa fa-bell"></i> Notifikasi</a></li>
+        <li class="active"><i class="fa fa-file-alt"></i> Ringkasan Nilai</li>
+        <li><a href="jadwal-mapel.html"><i class="fa fa-calendar-alt"></i> Jadwal Mapel</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1>Ringkasan Nilai</h1>
+
+      <div class="card">
+        <table class="nilai-table">
+          <thead>
+            <tr>
+              <th>Mata Pelajaran</th>
+              <th>Nilai Tugas</th>
+              <th>Nilai UTS</th>
+              <th>Nilai UAS</th>
+              <th>Rata-rata</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Matematika</td>
+              <td>85</td>
+              <td>80</td>
+              <td>90</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+              <td>88</td>
+              <td>84</td>
+              <td>86</td>
+              <td>86</td>
+            </tr>
+            <tr>
+              <td>Produktif RPL</td>
+              <td>92</td>
+              <td>89</td>
+              <td>94</td>
+              <td>91.7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

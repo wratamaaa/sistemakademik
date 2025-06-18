@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Profil</title>
+  <link rel="stylesheet" href="style-dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Sekolah" />
+      <div>
+        <h1>SMK HANG TUAH 1 JAKARTA</h1>
+        <h2>SMK PUSAT KEUNGGULAN</h2>
+      </div>
+    </div>
+    <a href="home.html" class="logout">Logout</a>
+  </header>
+
+  <div class="main">
+    <nav class="sidebar">
+      <div class="user-role">
+        <i class="fa fa-user-circle"></i>
+        <span>Admin</span>
+      </div>
+      <ul>
+        <li><a href="dashboard-admin.html"><i class="fa fa-home"></i> Beranda</a></li>
+        <li><a href="notifikasi-admin.html"><i class="fa fa-bell"></i> Pengumuman</a></li>
+        <li class="active"><a href="edit-profile.html"><i class="fa fa-pen"></i> Edit Profile</a></li>
+        <li><a href="edit-jadwal.html"><i class="fa fa-calendar"></i> Edit Jadwal</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1>Edit Profil Guru & Siswa</h1>
+
+      <div class="card">
+        <form class="form-nilai">
+          <label for="peran">Pilih Peran:</label>
+          <select id="peran" name="peran">
+            <option value="guru">Guru</option>
+            <option value="siswa">Siswa</option>
+          </select>
+
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+
+          <label for="nipnis">NIP / NIS:</label>
+          <input type="text" id="nipnis" name="nipnis" placeholder="Masukkan NIP (guru) atau NIS (siswa)">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email aktif">
+
+          <label for="telepon">No. Telepon:</label>
+          <input type="text" id="telepon" name="telepon" placeholder="Masukkan nomor telepon">
+
+          <label for="alamat">Alamat:</label>
+          <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+
+          <button type="submit">Simpan Perubahan</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

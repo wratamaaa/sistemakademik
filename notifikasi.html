@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notifikasi Siswa</title>
+  <link rel="stylesheet" href="style-dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Sekolah" />
+      <div>
+        <h1>SMK HANG TUAH 1 JAKARTA</h1>
+        <h2>SMK PUSAT KEUNGGULAN</h2>
+      </div>
+    </div>
+    <a href="home.html" class="logout">Logout</a>
+  </header>
+
+  <div class="main">
+    <nav class="sidebar">
+      <div class="user-role">
+        <i class="fa fa-user-circle"></i>
+        <span>Siswa</span>
+      </div>
+      <ul>
+        <li><a href="home.html`"><i class="fa fa-home"></i> Beranda</a></li>
+        <li class="active"><i class="fa fa-bell"></i> Notifikasi</li>
+        <li><a href="ringkasan-nilai.html"><i class="fa fa-file-alt"></i> Ringkasan Nilai</a></li>
+        <li><a href="jadwal-mapel.html"><i class="fa fa-calendar-alt"></i> Jadwal Mapel</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1>Notifikasi</h1>
+
+      <div class="card">
+        <div class="notif-item">
+          <div class="notif-icon"><i class="fa fa-bullhorn"></i></div>
+          <div class="notif-text">Pengumuman: Ujian Tengah Semester dimulai tanggal 3 Juni 2025.</div>
+        </div>
+
+        <div class="notif-item">
+          <div class="notif-icon"><i class="fa fa-calendar-check"></i></div>
+          <div class="notif-text">Jadwal pelajaran hari Jumat telah diperbarui.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Input Nilai Siswa</title>
+  <link rel="stylesheet" href="style-dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .nilai-table input {
+      width: 100%;
+      padding: 4px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .save-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .save-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Sekolah" />
+      <div>
+        <h1>SMK HANG TUAH 1 JAKARTA</h1>
+        <h2>SMK PUSAT KEUNGGULAN</h2>
+      </div>
+    </div>
+    <a href="home.html" class="logout">Logout</a>
+  </header>
+
+  <div class="main">
+    <nav class="sidebar">
+      <div class="user-role">
+        <i class="fa fa-user-circle"></i>
+        <span>Guru</span>
+      </div>
+      <ul>
+        <li><a href="dashboard-guru.html"><i class="fa fa-home"></i> Beranda</a></li>
+        <li><a href="notifikasi-guru.html"><i class="fa fa-bell"></i> Notifikasi</a></li>
+        <li class="active"><i class="fa fa-edit"></i> Input Nilai</li>
+        <li><a href="jadwal-mapel-guru.html"><i class="fa fa-calendar-alt"></i> Jadwal Mapel</a></li>
+        <li><a href="daftar-siswa.html"><i class="fa fa-users"></i> Daftar Siswa</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1>Input Nilai</h1>
+
+      <div class="card">
+        <form id="nilaiForm">
+          <table class="nilai-table">
+            <thead>
+              <tr>
+                <th>Nama Siswa</th>
+                <th>Mata Pelajaran</th>
+                <th>Nilai Tugas</th>
+                <th>Nilai UTS</th>
+                <th>Nilai UAS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ahmad</td>
+                <td>Matematika</td>
+                <td><input type="number" name="tugas" value="80" required></td>
+                <td><input type="number" name="uts" value="75" required></td>
+                <td><input type="number" name="uas" value="85" required></td>
+              </tr>
+              <tr>
+                <td>Siti</td>
+                <td>Bahasa Indonesia</td>
+                <td><input type="number" name="tugas" value="85" required></td>
+                <td><input type="number" name="uts" value="90" required></td>
+                <td><input type="number" name="uas" value="88" required></td>
+              </tr>
+              <tr>
+                <td>Budi</td>
+                <td>Produktif RPL</td>
+                <td><input type="number" name="tugas" value="90" required></td>
+                <td><input type="number" name="uts" value="87" required></td>
+                <td><input type="number" name="uas" value="92" required></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button type="submit" class="save-button">Simpan Nilai</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById('nilaiForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Nilai berhasil disimpan!");
+      // Di sini bisa ditambahkan fungsi untuk menyimpan ke database
+    });
+  </script>
+</body>
+</html>

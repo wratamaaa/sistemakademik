@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jadwal Mengajar Guru</title>
+  <link rel="stylesheet" href="style-dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .jadwal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .jadwal-table th, .jadwal-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .jadwal-table th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Sekolah" />
+      <div>
+        <h1>SMK HANG TUAH 1 JAKARTA</h1>
+        <h2>SMK PUSAT KEUNGGULAN</h2>
+      </div>
+    </div>
+    <a href="home.html" class="logout">Logout</a>
+  </header>
+
+  <div class="main">
+    <nav class="sidebar">
+      <div class="user-role">
+        <i class="fa fa-user-circle"></i>
+        <span>Guru</span>
+      </div>
+      <ul>
+        <li><a href="dashboard-guru.html"><i class="fa fa-home"></i> Beranda</a></li>
+        <li><a href="notifikasi-guru.html"><i class="fa fa-bell"></i> Notifikasi</a></li>
+        <li><a href="input-nilai.html"><i class="fa fa-edit"></i> Input Nilai</a></li>
+        <li class="active"><i class="fa fa-calendar-alt"></i> Jadwal Mapel</li>
+        <li><a href="daftar-siswa.html"><i class="fa fa-users"></i> Daftar Siswa</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1>Jadwal Mengajar Guru</h1>
+
+      <div class="card">
+        <table class="jadwal-table">
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Jam</th>
+              <th>Kelas</th>
+              <th>Mata Pelajaran</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Senin</td>
+              <td>07.00 - 08.30</td>
+              <td>XI RPL 1</td>
+              <td>Pemrograman Web</td>
+            </tr>
+            <tr>
+              <td>Senin</td>
+              <td>10.00 - 11.30</td>
+              <td>X RPL 2</td>
+              <td>Dasar-Dasar Pemrograman</td>
+            </tr>
+            <tr>
+              <td>Selasa</td>
+              <td>08.45 - 10.15</td>
+              <td>XII RPL 1</td>
+              <td>Pengujian Perangkat Lunak</td>
+            </tr>
+            <tr>
+              <td>Rabu</td>
+              <td>07.00 - 08.30</td>
+              <td>X RPL 1</td>
+              <td>Dasar-Dasar Pemrograman</td>
+            </tr>
+            <tr>
+              <td>Kamis</td>
+              <td>09.00 - 10.30</td>
+              <td>XI RPL 2</td>
+              <td>Desain UI/UX</td>
+            </tr>
+            <tr>
+              <td>Jumat</td>
+              <td>08.45 - 10.15</td>
+              <td>XII RPL 2</td>
+              <td>Rekayasa Perangkat Lunak</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
